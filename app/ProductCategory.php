@@ -1,0 +1,15 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ProductCategory extends Model
+{
+  public $table = "productcategories";
+  public $fillable = ['name',
+                    'description',];
+  public function products(){
+      return $this->hasMany('App\Product','productcategory_id','id');
+  }
+}

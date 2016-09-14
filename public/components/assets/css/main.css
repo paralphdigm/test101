@@ -1,0 +1,494 @@
+
+html, body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+body{
+  color: black;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar
+{
+  width: 7px;
+  background-color: #263238;
+}
+* {
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar-thumb
+{
+  background-color: #e0f2f1;
+}
+::-webkit-scrollbar
+{
+  width: 7px;
+  background-color: #263238;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: #CC0000;
+}
+hr.style14 {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+.parallax{
+	z-index: 1;
+	background: url(/components/assets/img/head2.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	padding-top: -10%;
+}
+.parallax .wrap h1{
+		padding-top: 12%;
+}
+.parallax .wrap img{
+	z-index: 10;
+}
+.parallax .wrap{
+		background: #d50000;
+}
+.parallax h5{
+	color: #fff;
+	z-index: 10;
+	position:relative;
+	margin: auto auto;
+	text-align: center;
+}
+.parallax .wrap h1{
+	z-index: 10;
+	color: white;
+	font-weight: bold;
+	position:relative;
+	margin: auto auto;
+	text-align: center;
+}
+
+.parallax .wrap span{
+	color: #212121;
+}
+.parallax .wrap{
+	background: rgba(0,0,0,0.2);
+	z-index: 2;
+	height: 100%;
+	position:relative;
+	display: block;
+}
+.parallax-container{
+	height: 600px;
+}
+#btndown{
+	z-index: 50;
+	margin-top: 5%;
+}
+
+.main{
+	padding-right:8%;
+	padding-left:8%;
+	padding-top:2%;
+	padding-bottom:2%;
+}
+ #blogs{
+   z-index: 1;
+   background: url(/components/assets/img/head2.png) no-repeat center center fixed;
+}
+#blogs .blogspan{
+  background: rgba(255,255,255,0.9);
+  z-index: 2;
+  height: 100%;
+  position:relative;
+  display: block;
+}
+#services{
+  z-index: 1;
+  background: url(/components/assets/img/head2.png) no-repeat center center fixed;
+  color: #fff;
+}
+#services .servicespan{
+ background: rgba(255,255,255,0.9);
+ z-index: 2;
+ height: 100%;
+ position:relative;
+ display: block;
+}
+
+nav{
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 3%;
+}
+nav ul li a:hover{
+	text-decoration: none;
+	color:#fff;
+
+}
+nav.navbar-material {
+  background: #d26335;
+  border: none;
+  box-shadow: none;
+}
+.navbar-material .nav-wrapper {
+  background: white;
+  margin: 20px;
+}
+.navbar-material .nav-wrapper > ul > li > a {
+  color: black;
+}
+.navbar-material .nav-wrapper .brand-logo img {
+  height: 64px;
+}
+.navbar-material .nav-wrapper .button-collapse i {
+  color: black;
+}
+@media (max-width: 600px) {
+  .navbar-material .nav-wrapper .brand-logo img {
+    height: 56px;
+  }
+}
+.post-slide{
+    margin: 0 15px;
+    background: #fff;
+    border-bottom: 1px solid #dedde1;
+
+}
+.post-slide .post-header{
+    padding: 15px 20px;
+}
+.post-slide .title{
+    margin-bottom: 5px;
+}
+.post-slide .title a{
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.4s ease 0s;
+}
+.post-slide .title a:hover{
+    color: #fd6058;
+    text-decoration: none;
+}
+.post-slide .post-bar{
+    margin: 15px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+.post-slide .post-bar li{
+    display: inline-block;
+    margin-right: 20px;
+    color: #808080;
+}
+.post-slide .post-bar li a{
+    font-size: 15px;
+    color: #808080;
+    text-transform: capitalize;
+}
+.post-slide .post-bar li a:hover{
+    text-decoration: none;
+    color: #fd6058;
+}
+.post-slide .post-bar li img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.post-slide .post-bar li i,
+.post-slide .post-bar li img{
+    margin-right: 5px;
+}
+.post-slide .pic{
+    overflow: hidden;
+    position: relative;
+}
+.post-slide .pic:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0);
+    transition: all 0.9s ease 0s;
+}
+.post-slide:hover .pic:after{
+    background: rgba(255,255,255,0.2);
+}
+.post-slide .pic img{
+    width: 100%;
+    height: auto;
+    transform: rotate(0deg) scale(1,1);
+    transition: all 0.6s ease-in-out 0s;
+}
+.post-slide:hover .pic img{
+    transform: rotate(10deg) scale(1.5,1.5);
+}
+.post-slide .post-category{
+    padding: 5px 15px;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fd6058;
+    z-index: 1;
+}
+.post-slide .post-category li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.post-slide .post-category li:after{
+    content: " ,";
+    color: #fff;
+}
+.post-slide .post-category li:last-child:after{
+    content: "";
+}
+.post-slide .post-category li a{
+    color: #fff;
+}
+.post-slide .post-category li a:hover{
+    text-decoration: none;
+    color: #333;
+}
+.post-slide .post-description{
+    font-size: 16px;
+    color: #000;
+    padding: 15px;
+}
+
+
+footer{
+    background: #202020;
+    padding: 30px 0;
+    border-top: 10px solid #161616
+}
+
+footer h4{
+    margin: 0;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+
+footer ul{
+    float: left;
+    width: 25%;
+    list-style-type: none;
+}
+
+footer li{
+    color: #aaa;
+    width: 80%;
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+footer:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer li.tw{
+    padding-left: 20px;
+    background: url(images/tweet.png) no-repeat left 6px;
+}
+
+#copyright{
+    clear: both;
+    padding-top: 30px;
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    border-top: 2px solid #333;
+    color: #999;
+    font-size: 14px;
+}
+#latest-work h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+#latest-work li{
+    width: 32%;
+    float: left;
+    list-style-type: none;
+}
+
+#latest-work li img{
+    width: 100%;
+}
+
+#latest-work li:nth-child(2){
+    margin: 0 2%;
+}
+
+#latest-work ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#latest-work h3{
+    margin-bottom: 0px;
+}
+
+#latest-work p{
+    line-height: 1.6em;
+}
+/**/
+
+#services h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+#services li{
+    width: 32%;
+    float: left;
+    list-style-type: none;
+}
+
+#services li img{
+    width: 100%;
+}
+
+#services li:nth-child(2){
+    margin: 0 2%;
+}
+
+#services ul:after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+#services h3{
+    margin-bottom: 0px;
+}
+
+#services p{
+    line-height: 1.6em;
+		color:#000;
+}
+ .btn-wrapp .go-right{
+   position:absolute;
+    right: 10%;
+    margin-top: 10%;
+}
+.btn-wrapp .go-left {
+  position:absolute;
+    right: 10%;
+    margin-top: 15%;
+}
+.btn-wrapp a {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.tabs .indicator {
+   background-color: transparent;
+}
+@media screen and (max-width: 990px){
+    .serviceBox{
+        margin-bottom:10px;
+    }
+
+    footer ul{
+        width: 100%;
+        float: none;
+        border-top: 2px solid #333;
+    }
+    .btn-wrapp {
+        display: block;
+        margin: 0 auto;
+        position: static;
+        width: 142px;
+    }
+
+    .btn-wrapp .go-right{
+      position:static;
+       margin: auto auto;
+
+   }
+   .btn-wrapp .go-left {
+     position:static;
+      margin: auto auto;
+      margin-right: 25px;
+
+   }
+   .portfolio-section {
+       margin-right:50px;
+   }
+   .parallax{
+   	width: auto;
+   }
+   .parallax-container{
+     height: 400px;
+   }
+
+}
+@media screen and (max-width: 768px){
+
+    #latest-work li{
+        width: 80%;
+        margin: 10% 10% !important;
+        float: none;
+    }
+
+    #latest-work h2{
+        text-align: center;
+    }
+		#services li{
+        width: 80%;
+        margin: 10% 10% !important;
+        float: none;
+    }
+
+    #services h2{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+
+    .post-header .post-bar li{
+        margin-right: 5px;
+    }
+    #latest-work li{
+        width: 90%;
+        margin: 5% 5% !important;
+    }
+    footer ul{
+        width: 100%;
+        float: none;
+        border-top: 2px solid #333;
+    }
+		#services li{
+        width: 90%;
+        margin: 5% 5% !important;
+    }
+    .parallax{
+    	width: auto;
+    }
+    .parallax-container{
+      height: 300px;
+    }
+
+}
